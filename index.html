@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Service Models</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Various Cloud Service Models</h1>
+    </header>
+    <nav class="nav">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#iaas" onclick="showContent('iaas')">IaaS</a></li>
+            <li><a href="#paas" onclick="showContent('paas')">PaaS</a></li>
+            <li><a href="#saas" onclick="showContent('saas')">SaaS</a></li>
+            <li><a href="#ComparativeAnalysis" onclick="showContent('ComparativeAnalysis')">Comparative Analysis</a></li>
+            <li><a href="#about" onclick="showContent('about')">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="image-container">
+            <img src="cloud-models.png" alt="Cloud Service Models">
+        </div>
+        <div class="content" id="iaas">
+            <h2>Infrastructure as a Service (IaaS)</h2>
+            <p>IaaS, also known as Hardware as a Service (HaaS), allows customers to outsource IT infrastructures such as servers, networking, processing, storage, virtual machines, and other resources...</p>
+            <li> Iaasis alsoknownasHardwareasaService(HaaS).</li>
+            <li>It allows customers to outsource their IT infrastructuressuch as servers, networking, processing, storage, virtual
+                machines, and other resources. </li>
+            <li>Withthehelp of the IaaS, clients can dynamically scale the
+                configuration to meet changing requirements of business
+                billed only for the services actually used.</li> 
+            <li>IaaS cloud computing platform layer eliminates the need
+                for every organization to maintain the IT infrastructure.</li>
+                <h3>IaaS Components:</h3>
+            <ul>
+                <li>Compute: Virtual CPUs and memory</li>
+                <li>Storage: Cloud-based file storage</li>
+                <li>Network: Routers and switches</li>
+                <li>Load Balancers: Infrastructure level balancing</li>
+            </ul>
+            <div class="image-container">
+                <img src="iaas.png" alt="Cloud Service Models">
+            </div>
+            <h3>Examples:</h3>
+            <ul>
+                <li>Amazon EC2</li>
+                <li>Amazon S3</li>
+                <li>Google Compute Engine</li>
+                <li>Google Cloud Storage</li>
+                <li>Azure Virtual Machines</li>
+                <li>Azure Virtual Network</li>
+                <li>Oracle Compute</li>
+            </ul>
+            <h3>Advantages of IaaS:</h3>
+            <ul>
+                <li>Shared Infrastructure: Allows multiple users to share the same physical infrastructure.</li>
+                <li>Web Access to Resources: IT users can access hardware resources over the internet.</li>
+                <li>Scalability: Infrastructure can be scaled dynamically based on usage.</li>
+                <li>Focus on Core Competencies: Offloading infrastructure management to a provider enables organizations to focus on business goals.</li>
+                <li>Easy Management and Automation: APIs and management interfaces allow automation.</li>
+                <li>Green Computing: Efficient resource utilization leads to lower energy consumption.</li>
+            </ul>
+            <h3>Disadvantages of IaaS:</h3>
+            <ul>
+                <li>Security: Storing critical data with a third-party provider raises concerns.</li>
+                <li>Vendor Lock-In: Difficult to migrate VMs between providers.</li>
+                <li>Limited Physical Control: Users do not have direct access to physical infrastructure.</li>
+                <li>Cost Management Challenges: Keeping track of usage costs can be complex.</li>
+            </ul>
+        </div>
+        <div class="content" id="paas">
+            <h2>Platform as a Service (PaaS)</h2>
+            <p>PaaS provides a development environment as a service, enabling developers to easily create, test, run, and deploy web applications...</p>
+            <li>PaaSprovidesadevelopmentenvironmentasaservice,enabling
+                developers to easily create, test, run, and deploy web
+                applications. (Development Platform)</li>
+            <li>PaaS is designed to support the complete web application
+                lifecycle: building, testing, deploying, managing, and
+                updating.</li>
+            <li>It includes development tools, middleware, databases, and
+                runtime environments that allow developers to build and
+                deploy applications without worrying about the underlying
+                infrastructure.</li>
+            <li> PaaS is suitable for developers who want to focus on
+                application development without managing the underlying
+                infrastructure.</li>
+            <h3>PaaS Components:</h3>
+            <ul>
+                <li>Programming Languages: Java, PHP, ASP.Net, etc.</li>
+                <li>Development Tools: IDEs, Code Editors, Version Control Systems.</li>
+                <li>Middleware: Databases, Messaging systems.</li>
+                <li>Runtime Services: Application hosting, Load balancing.</li>
+                <li>APIs: For integration with other services.</li>
+            </ul>
+            <div class="image-container">
+                <img src="paas.png" alt="Cloud Service Models">
+            </div>
+            <h3>Examples:</h3>
+            <ul>
+                <li>Google App Engine</li>
+                <li>AWS Elastic Beanstalk</li>
+                <li>Force.com</li>
+                <li>SAP (Systems, Applications, and Products)</li>
+                <li>Joyent</li>
+                <li>Heroku</li>
+                <li>Red Hat OpenShift</li>
+            </ul>
+            <h3>Advantages of PaaS:</h3>
+            <ul>
+                <li>Simplified Development: Developers focus on coding without managing infrastructure.</li>
+                <li>Prebuilt Business Functionality: Some vendors provide built-in functionalities.</li>
+                <li>Instant Community: Developers can share experiences and seek advice.</li>
+                <li>Faster Time-to-Market: Automated deployment speeds up releases.</li>
+                <li>Automatic Updates and Patching: Providers handle software updates.</li>
+                <li>Reduced Vendor Lock-In: Easier to switch between providers compared to IaaS.</li>
+            </ul>
+            <h3>Disadvantages of PaaS:</h3>
+            <ul>
+                <li>Limited Control Over Infrastructure: Less control over underlying infrastructure.</li>
+                <li>Limited Choice of Development Tools: Restricted to vendor-supported tools.</li>
+                <li>Initial Learning Curve: Developers need time to adapt to platform-specific tools.</li>
+                <li>Compatibility Challenges: Migrating existing applications can be difficult.</li>
+            </ul>
+        </div>
+        <div class="content" id="saas">
+            <h2>Software as a Service (SaaS)</h2>
+            <p>Also known as "on-demand software," SaaS provides users with access to software applications over the internet without the need to install or maintain software on devices.</p>
+            <li>SaaSisalsoknownas"on-demandsoftware".</li>
+            <li>It is a cloud computing service model that provides users
+                with access to software applications over the internet.</li>
+            <li>Instead of installing and maintaining software on
+                individual devices or servers, users can access the
+                application through a web browser.</li>
+            <h3>Services Provided by SaaS Providers:</h3>
+            <ul>
+                <li>Business Services: ERP, CRM, Billing, Sales.</li>
+                <li>Document Management: Slack, Zoho.</li>
+                <li>Social Networks: Facebook, LinkedIn, Twitter (X).</li>
+                <li>Mail Services: MailChimp, Gmail.</li>
+            </ul>
+            <div class="image-container">
+                <img src="saas.png" alt="Cloud Service Models">
+            </div>
+            <h3>Examples of SaaS: </h3>
+            <ul>
+                <li>Salesforce CRM</li>
+                <li>Microsoft Office 365</li>
+                <li>WordPress</li>
+                <li>Netflix</li>
+                <li>Dropbox</li>
+                <li>GitHub</li>
+                <li>Drupal</li>
+                <li>Spotify</li>
+            </ul>
+           
+            <h3>Advantages of SaaS:</h3>
+            <ul>
+                <li>Cost Savings: No need for heavy investment in hardware and licenses.</li>
+                <li>Rapid Deployment: Ready to use upon subscription.</li>
+                <li>Reduced IT Dependency: Providers handle technical maintenance.</li>
+                <li>Accessibility and Collaboration: Accessible from anywhere with real-time collaboration features.</li>
+                <li>Automatic Updates: Continuous improvements and security patches.</li>
+                <li>Multi-Device Support: Accessible from desktops, laptops, tablets, and smartphones.</li>
+                <li>No Client-Side Installation: Fully accessed via the internet.</li>
+            </ul>
+            <h3>Disadvantages of SaaS:</h3>
+            <ul>
+                <li>Internet Dependency: Requires a stable connection for usage.</li>
+                <li>Limited Customization: Less flexible compared to on-premises software.</li>
+                <li>Limited Control Over Updates: Forced updates can disrupt workflows.</li>
+                <li>Data Portability Challenges: Migrating data between providers can be complex.</li>
+                <li>Compliance and Legal Issues: Regulatory concerns due to differing regional compliance standards.</li>
+            </ul>
+        </div>
+        <div class="content" id="ComparativeAnalysis"></div>
+        <h2>Comparative Analysis of Cloud Service Models</h2>
+    <table>
+        <tr>
+            <th>Feature</th>
+            <th>IaaS (Infrastructure as a Service)</th>
+            <th>PaaS (Platform as a Service)</th>
+            <th>SaaS (Software as a Service)</th>
+        </tr>
+        <tr>
+            <td><strong>Definition</strong></td>
+            <td>Provides virtualized computing resources over the internet.</td>
+            <td>Offers a platform for developers to build, deploy, and manage applications.</td>
+            <td>Delivers software applications over the internet on a subscription basis.</td>
+        </tr>
+        <tr>
+            <td><strong>Control Level</strong></td>
+            <td>High – Users control OS, applications, and storage.</td>
+            <td>Medium – Users control applications but not underlying infrastructure.</td>
+            <td>Low – Users only control application settings.</td>
+        </tr>
+        <tr>
+            <td><strong>Management</strong></td>
+            <td>User manages OS, applications, and runtime environment.</td>
+            <td>Provider manages infrastructure, user manages applications.</td>
+            <td>Provider manages everything, including software updates and maintenance.</td>
+        </tr>
+        <tr>
+            <td><strong>Target Users</strong></td>
+            <td>IT administrators, developers, enterprises needing infrastructure.</td>
+            <td>Developers, businesses building applications without managing infrastructure.</td>
+            <td>End-users, businesses needing ready-to-use applications.</td>
+        </tr>
+        <tr>
+            <td><strong>Examples</strong></td>
+            <td>AWS EC2, Google Compute Engine, Microsoft Azure Virtual Machines</td>
+            <td>Google App Engine, AWS Elastic Beanstalk, Microsoft Azure App Services</td>
+            <td>Google Workspace, Microsoft 365, Dropbox, Salesforce</td>
+        </tr>
+        <tr>
+            <td><strong>Scalability</strong></td>
+            <td>Highly scalable, but requires manual configuration.</td>
+            <td>Scalable with automation tools for deployment.</td>
+            <td>Automatically scalable based on user needs.</td>
+        </tr>
+        <tr>
+            <td><strong>Customization</strong></td>
+            <td>Highly customizable; users can install and configure any software.</td>
+            <td>Limited customization; users develop applications within a predefined environment.</td>
+            <td>Minimal customization; users rely on pre-built features.</td>
+        </tr>
+        <tr>
+            <td><strong>Cost Structure</strong></td>
+            <td>Pay-per-use based on resources consumed (CPU, storage, bandwidth).</td>
+            <td>Subscription or usage-based pricing for development and hosting services.</td>
+            <td>Subscription-based pricing, often per user or per organization.</td>
+        </tr>
+        <tr>
+            <td><strong>Security Responsibility</strong></td>
+            <td>User is responsible for securing OS, applications, and data.</td>
+            <td>Shared responsibility; provider secures infrastructure, user secures apps.</td>
+            <td>Provider is responsible for security and compliance.</td>
+        </tr>
+        <tr>
+            <td><strong>Best For</strong></td>
+            <td>Businesses needing flexible, scalable infrastructure without owning hardware.</td>
+            <td>Developers looking to build, test, and deploy applications quickly.</td>
+            <td>Businesses and individuals needing ready-to-use software solutions.</td>
+        </tr>
+    </table>
+    </div>
+    <div class="about" id="about">
+        <h1>About Us</h1>
+        <div class="student">
+            <h2>Student 1</h2>
+            <p><strong>Name:</strong> Hudda Samir B</p>
+            <p><strong>Enrollment Number:</strong> 226090307037</p>
+        </div>
+        <div class="student">
+            <h2>Student 2</h2>
+            <p><strong>Name:</strong>Maheriya Hardik S</p>
+            <p><strong>Enrollment Number:</strong> 226090307064</p>
+        </div>
+        <div class="mentor">
+            <h2>Mentor</h2>
+            <p><strong>Name:</strong> Pratik B Parmar</p>
+        </div>
+    </div>
+    
+    </div>
+    <footer>
+        <p>&copy; 2025 Cloud Service Models </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,274 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7fc;
+    color: #333;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 70px; /* Adjust to prevent content overlap with navbar */
+}
+
+/* Navigation Bar */
+.nav {
+    background: linear-gradient(135deg, #1D2671, #C33764);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  padding: 30px 20px;
+  height: 30px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease-in-out;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 25px;
+  margin: 0 15px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: rgb(18, 1, 1);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    background: rgba(241, 236, 236, 0.2);
+}
+
+/* Hamburger Menu for Mobile */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        background: #1D2671;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .nav-links.active {
+        display: flex; /* This will show when toggled in JS */
+    }
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1D2671, #C33764);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+/* Content Box */
+.content {
+    background: white;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1D2671;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* List Items */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e8eaf6;
+    margin: 8px 0;
+    padding: 14px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+ul li:hover {
+    background: #c5cae9;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #1D2671;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f7fc;
+}
+
+tr:hover {
+    background-color: #e3eafc;
+    transition: background 0.3s;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1D2671, #C33764);
+    color: white;
+    margin-top: 25px;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Image Styling */
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+    background: white;
+    padding: 40px 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.about h1 {
+    color: #1D2671;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.student, .mentor {
+    background: #e3eafc;
+    padding: 22px;
+    margin: 12px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.student:hover, .mentor:hover {
+    transform: translateY(-6px);
+    background: #c5cae9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about {
+        width: 95%;
+        padding: 30px;
+    }
+    .student, .mentor {
+        padding: 18px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 18px;
+    }
+    table {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 12px;
+    }
+    .nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        margin: 2px 0;
+    }
+}
