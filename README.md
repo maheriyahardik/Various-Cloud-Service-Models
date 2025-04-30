@@ -1,3 +1,4 @@
+https://maheriyahardik.github.io/Various-Cloud-Service-Models/
 Cloud service models are categorized into three main types, each serving different purposes and levels of control. These models define how cloud services are delivered and managed.
 
 1. Infrastructure as a Service (IaaS)
